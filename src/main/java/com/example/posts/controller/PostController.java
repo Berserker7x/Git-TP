@@ -15,10 +15,9 @@ public class PostController {
 
     @Autowired
     private PostService postService;
-    @PostMapping("/add/{id_user}")
+    @PostMapping("/dd/{id_user}")
     public Post addPost(@RequestBody Post post, @PathVariable Long id_user){
-        return
-                postService.addPost(id_user ,post);
+        return postService.addPost(id_user ,post);
     }
 
     @GetMapping("/get")
