@@ -1,5 +1,6 @@
 package com.example.posts.controller;
 
+import com.example.models.User;
 import com.example.posts.models.Comments;
 import com.example.posts.models.Post;
 import com.example.posts.service.PostService;
@@ -23,6 +24,10 @@ public class PostController {
     @GetMapping("/get")
     public List<Post> getPost(){
         return postService.getAll();
+    }
+
+    public String getString(){
+        return "yasser";
     }
 
     @PostMapping("/comment/{id_user}/{id_post}")
