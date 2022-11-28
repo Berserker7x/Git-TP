@@ -27,7 +27,7 @@ public class PostController {
     }
 
     public String getString(){
-        return "yasser";
+        return "khalid";
     }
 
     @PostMapping("/comment/{id_user}/{id_post}")
