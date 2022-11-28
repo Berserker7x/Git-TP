@@ -25,7 +25,7 @@ public class PostController {
         return postService.getAll();
     }
 
-    @PostMapping("/comment/{id_post}/{id_user}")
+    @PostMapping("/comment/{id_user}/{id_post}")
     public Comments addCommentToPost(@RequestBody Comments comments, @PathVariable Long id_user, @PathVariable Long id_post ){
         return postService.addCommentToPost(comments ,id_user, id_post);
     }
